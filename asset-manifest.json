@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/AXCWG/e-hentai_embed_json.git/static/css/main.435d5fe5.chunk.css",
-    "main.js": "/AXCWG/e-hentai_embed_json.git/static/js/main.01b01939.chunk.js",
-    "main.js.map": "/AXCWG/e-hentai_embed_json.git/static/js/main.01b01939.chunk.js.map",
-    "runtime~main.js": "/AXCWG/e-hentai_embed_json.git/static/js/runtime~main.332d7bd8.js",
-    "runtime~main.js.map": "/AXCWG/e-hentai_embed_json.git/static/js/runtime~main.332d7bd8.js.map",
-    "static/js/2.bbc244fd.chunk.js": "/AXCWG/e-hentai_embed_json.git/static/js/2.bbc244fd.chunk.js",
-    "static/js/2.bbc244fd.chunk.js.map": "/AXCWG/e-hentai_embed_json.git/static/js/2.bbc244fd.chunk.js.map",
-    "static/js/3.a29efab2.chunk.js": "/AXCWG/e-hentai_embed_json.git/static/js/3.a29efab2.chunk.js",
-    "static/js/3.a29efab2.chunk.js.map": "/AXCWG/e-hentai_embed_json.git/static/js/3.a29efab2.chunk.js.map",
-    "index.html": "/AXCWG/e-hentai_embed_json.git/index.html",
-    "precache-manifest.ef94b46706b1873e879a4171e32e80d9.js": "/AXCWG/e-hentai_embed_json.git/precache-manifest.ef94b46706b1873e879a4171e32e80d9.js",
-    "service-worker.js": "/AXCWG/e-hentai_embed_json.git/service-worker.js",
-    "static/css/main.435d5fe5.chunk.css.map": "/AXCWG/e-hentai_embed_json.git/static/css/main.435d5fe5.chunk.css.map",
-    "static/media/logo.svg": "/AXCWG/e-hentai_embed_json.git/static/media/logo.06e73328.svg"
+    "main.css": "/e-hentai_embed_json/static/css/main.435d5fe5.chunk.css",
+    "main.js": "/e-hentai_embed_json/static/js/main.01b01939.chunk.js",
+    "main.js.map": "/e-hentai_embed_json/static/js/main.01b01939.chunk.js.map",
+    "runtime~main.js": "/e-hentai_embed_json/static/js/runtime~main.25989106.js",
+    "runtime~main.js.map": "/e-hentai_embed_json/static/js/runtime~main.25989106.js.map",
+    "static/js/2.bbc244fd.chunk.js": "/e-hentai_embed_json/static/js/2.bbc244fd.chunk.js",
+    "static/js/2.bbc244fd.chunk.js.map": "/e-hentai_embed_json/static/js/2.bbc244fd.chunk.js.map",
+    "static/js/3.a29efab2.chunk.js": "/e-hentai_embed_json/static/js/3.a29efab2.chunk.js",
+    "static/js/3.a29efab2.chunk.js.map": "/e-hentai_embed_json/static/js/3.a29efab2.chunk.js.map",
+    "index.html": "/e-hentai_embed_json/index.html",
+    "precache-manifest.42559e4c3fecb6e668fbd280169177be.js": "/e-hentai_embed_json/precache-manifest.42559e4c3fecb6e668fbd280169177be.js",
+    "service-worker.js": "/e-hentai_embed_json/service-worker.js",
+    "static/css/main.435d5fe5.chunk.css.map": "/e-hentai_embed_json/static/css/main.435d5fe5.chunk.css.map",
+    "static/media/logo.svg": "/e-hentai_embed_json/static/media/logo.06e73328.svg"
   }
 }
