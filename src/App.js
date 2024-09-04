@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import { Button } from 'react-bootstrap';
 const searchParams = new URLSearchParams(window.location.search);
 console.log(searchParams.get("gid"))
 var requestResult;
@@ -26,7 +25,7 @@ async function actions() {
 function App() {
   console.log(typeof (gmetadataObject_react))
   console.log(gmetadataObject_react)
-  if(searchParams.get("gid")==null | searchParams.get("token")== null | gmetadataObject_react.title == null){
+  if(searchParams.get("gid")===null | searchParams.get("token")=== null | gmetadataObject_react.title === undefined){
     return (
       <>
         invalid request. 
@@ -39,10 +38,10 @@ function App() {
       <div className="row">
         <div className="col-md-4 d-md-none d-block" style={{ zoom: 1, textAlign: "center" }}>
           
-          <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} className="img-fluid p-3" alt='thumbnail'  width={"400"}/>
+          <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{height:"100%"}} className="img-fluid p-3" alt='thumbnail'  width={"400"}/>
         </div>
         <div className="col-md-4 d-md-block d-none" style={{ zoom: 1, textAlign: "center" }}>
-          <img id="thumb" src={gmetadataObject_react.thumb} className="img-fluid p-3" alt='thumbnail' />
+          <img id="thumb" src={gmetadataObject_react.thumb} style={{height:"100%"}} className="img-fluid p-3" alt='thumbnail' />
         </div>
 
 
