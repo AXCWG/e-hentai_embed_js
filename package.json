@@ -2,7 +2,7 @@
   "name": "e-hentai_embed_jsx",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://axcwg.github.io/e-hentai_embed_json/",
+  "homepage": "https://axcwg.github.io/e-hentai_embed_js/",
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
