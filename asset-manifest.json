@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/e-hentai_embed_json/static/css/main.f855e6bc.css",
-    "main.js": "/e-hentai_embed_json/static/js/main.da8d27a9.js",
-    "static/js/453.25f2cf78.chunk.js": "/e-hentai_embed_json/static/js/453.25f2cf78.chunk.js",
-    "index.html": "/e-hentai_embed_json/index.html",
-    "main.f855e6bc.css.map": "/e-hentai_embed_json/static/css/main.f855e6bc.css.map",
-    "main.da8d27a9.js.map": "/e-hentai_embed_json/static/js/main.da8d27a9.js.map",
-    "453.25f2cf78.chunk.js.map": "/e-hentai_embed_json/static/js/453.25f2cf78.chunk.js.map"
+    "main.css": "/e-hentai_embed_js/static/css/main.f855e6bc.css",
+    "main.js": "/e-hentai_embed_js/static/js/main.ac3d09ec.js",
+    "static/js/453.25f2cf78.chunk.js": "/e-hentai_embed_js/static/js/453.25f2cf78.chunk.js",
+    "index.html": "/e-hentai_embed_js/index.html",
+    "main.f855e6bc.css.map": "/e-hentai_embed_js/static/css/main.f855e6bc.css.map",
+    "main.ac3d09ec.js.map": "/e-hentai_embed_js/static/js/main.ac3d09ec.js.map",
+    "453.25f2cf78.chunk.js.map": "/e-hentai_embed_js/static/js/453.25f2cf78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.da8d27a9.js"
+    "static/js/main.ac3d09ec.js"
   ]
 }
