@@ -1,13 +1,25 @@
-# E-hentai Web Embed
+# E-hentai Web Embed Widget
 
 Embedding your favourate hentai in web. 
 
 Usage: 
 
 ```
-<iframe src="http://localhost:3000/e-hentai_embed_js?gid=[Replace with gid]&amp;token=[Replace with token]"></iframe>
+<iframe src="http://axcwg.github.io/e-hentai_embed_js?gid=[Replace with gid]&amp;token=[Replace with token]"></iframe>
 ```
 
-Insert the thing inside your website, then replace the fields with the corresponding. 
+Insert the thing inside your website, replace the fields with the corresponding, then style it! 
 
 Very simple. 
+
+---
+
+# E站同人志Web控件
+
+想要优雅地向别人推荐你的典藏？只需将下面的iframe贴入你的HTML网页就好！
+
+```
+<iframe src="http://axcwg.github.io/e-hentai_embed_js?gid=[替换为gid]&amp;token=[替换为token]"></iframe>
+```
+
+非常简单。
