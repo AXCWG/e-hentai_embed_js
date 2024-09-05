@@ -10,7 +10,7 @@ Usage:
 
 Insert the thing inside your website, replace the fields with the corresponding, then style it! 
 
-Very simple. Examples here (also was from my blog): ![example](https://axcwg.github.io/e-hentai_example/)
+Very simple. Examples here (also was from my blog): [example](https://axcwg.github.io/e-hentai_example/)
 
 ---
 
@@ -22,4 +22,4 @@ Very simple. Examples here (also was from my blog): ![example](https://axcwg.git
 <iframe src="http://axcwg.github.io/e-hentai_embed_js?gid=[替换为gid]&amp;token=[替换为token]"></iframe>
 ```
 
-非常简单。示例（来自我的博客）：![example](https://axcwg.github.io/e-hentai_example/)
+非常简单。示例（来自我的博客）：[example](https://axcwg.github.io/e-hentai_example/)
