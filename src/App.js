@@ -32,8 +32,14 @@ function App() {
       </>
     )
   }
-  return (
+  if(searchParams.get("dark")==1){
+    document.body.classList.toggle('dark')
 
+
+
+  }
+  return (
+    
     <div className='rounded' style={{ backgroundColor: "#F0F0F0", }}>
       <div className="row">
         <div className="col-md-5 d-md-none d-block" style={{ zoom: 1, textAlign: "center" }}>

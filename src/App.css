@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+@media (prefers-color-scheme: light) {
+  html {
+      filter: invert(0);
+  }
+}
+@media (prefers-color-scheme: dark){
+  html{
+    filter: invert(1);
+  }
+  img{
+    filter: invert(1);
+  }
+}
