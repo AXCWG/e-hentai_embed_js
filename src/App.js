@@ -43,18 +43,18 @@ function App() {
     <div className='rounded' style={{ backgroundColor: "#F0F0F0", }}>
       <div className="row" style={{height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
         
-          <div className="col-md-6 d-md-none d-block" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%"  }}>
+          <div className="col-sm-6 d-sm-none d-block" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%"  }}>
             <div></div>
             <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
           </div>
-          <div className="col-md-6 d-md-block d-none" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
+          <div className="col-sm-6 d-sm-block d-none" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
             <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{ width: "100%", }} className="p-3" alt='thumbnail' />
           </div>
         
 
 
 
-        <div className="col-md-6 p-3" >
+        <div className="col-sm-6 p-3" >
           <div className='container-fluid'>
             <div className="container-fluid" style={{ textAlign: "center", width: "100%", }}>
               <h3 onClick={() => { window.top.location = 'https://e-hentai.org/g/' + gmetadataObject_react.gid + '/' + gmetadataObject_react.token }} className="display-6 " style={{ fontSize: "1.5rem", textAlign: "start", }} id="title">{gmetadataObject_react.title}</h3>
