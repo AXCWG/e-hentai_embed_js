@@ -7,7 +7,7 @@ var gmetadataObject_react = await actions().then((res) => gmetadataObject_react 
 
 async function actions() {
 
-  await fetch("https://api.e-hentai.org/api.php",
+  await fetch("https://axcwg.cn/api/ehentaiproxypost",
     {
       method: "POST",
       body: '{"method": "gdata","gidlist": [[' + searchParams.get("gid") + ',"' + searchParams.get("token") + '"]],"namespace": 1}',
