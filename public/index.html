@@ -26,25 +26,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-    <script>
-      var requestResult; 
-            async function actions() {
-                await fetch("https://api.e-hentai.org/api.php", 
-                {
-                    method: "POST",
-                    body: '{"method": "gdata","gidlist": [[2231376,"a7584a5932"]],"namespace": 1}',
-                    headers: new Headers({
-                        'Content-Type':'application/json'
-                    }),
-
-                }).then(async function (res) {requestResult = await res.json()})
-                .catch((error) => console.error("Error: ", error))
-                var gmetadataObject =requestResult.gmetadata[0]
-                
-            }
-            actions();
-    </script>
+    <title>eh</title>
+    
   </head>
   <body >
     <div class="container-fluid" id="root" style="width: 100%;">

@@ -45,7 +45,7 @@ function App() {
         
           <div className="col-sm-6 d-sm-none d-block" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%"  }}>
             <div></div>
-            <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
+            <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
           </div>
           <div className="col-sm-6 d-sm-block d-none" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
             <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{ width: "100%", }} className="p-3" alt='thumbnail' />
