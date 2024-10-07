@@ -13,7 +13,7 @@ if (searchParams.get("zh") !== null) {
 
 async function actions() {
 
-  await fetch("https://axcwg.cn/api/ehentaiproxypost",
+  await fetch((searchParams.get("official")==="true") ? 'https://e-hentai.org/api.php' : 'https://axcwg.cn/api/ehentaiproxypost',
     {
       method: "POST",
       body: '{"method": "gdata","gidlist": [[' + searchParams.get("gid") + ',"' + searchParams.get("token") + '"]],"namespace": 1}',
