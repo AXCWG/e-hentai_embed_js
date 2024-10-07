@@ -23,3 +23,9 @@ Very simple. Examples here (also was from my blog): [example](https://axcwg.gith
 ```
 
 非常简单。示例（来自我的博客）：[example](https://axcwg.github.io/e-hentai_example/)
+
+# 2024.10.07 Added parameter zh
+
+Chinese by default. Add parameter zh=false to show English page. 
+
+默认中文，添加zh=false变英文。
