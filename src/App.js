@@ -5,7 +5,7 @@ const searchParams = new URLSearchParams(window.location.search);
 var requestResult;
 var gmetadataObject_react
 const wait = t => new Promise((resolve, reject) => setTimeout(resolve, t))
-async function get() { await actions().then((res) => gmetadataObject_react = res).catch(async (e) => {await wait(1000) ; await get() }) };
+async function get() { await actions().then((res) => gmetadataObject_react = res).catch(async (e) => { await wait(1000); await get() }) };
 await get()
 var zh = true;
 if (searchParams.get("zh") !== null) {
@@ -18,7 +18,7 @@ async function actions() {
   await fetch((searchParams.get("official") === "true") ? 'https://e-hentai.org/api.php' : 'https://axcwg.cn/api/ehentaiproxypost',
     {
       method: "POST",
-      body: '{"method": "gdata","gidlist": [[' + searchParams.get("gid") + ',"' + searchParams.get("token") + '"]],"namespace": 1}',
+      body: '{"method": "gdata","gidlist": [[' + (searchParams.get("gid") === null) ? "2231376" : searchParams.get("gid") + ',"' + (searchParams.get("token") === null) ? "a7584a5932" : searchParams.get("token") + '"]],"namespace": 1}',
       headers: new Headers({
         'Content-Type': 'application/json'
       }),
@@ -32,7 +32,7 @@ async function actions() {
 
 function App() {
 
-  if (searchParams.get("gid") === null || searchParams.get("token") === null || gmetadataObject_react.title === undefined) {
+  if (gmetadataObject_react.title === undefined) {
     return (
       <>
         invalid request.
@@ -57,7 +57,7 @@ function CN() {
 
         <div className="col-sm-6 d-sm-none d-block" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
           <div></div>
-          <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
+          <img id="thumb" src={searchParams.get("official") === "true" ? gmetadataObject_react.thumb.replace("l.jpg", "300.jpg") : gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
         </div>
         <div className="col-sm-6 d-sm-block d-none" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
           <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{ width: "100%", }} className="p-3" alt='thumbnail' />
@@ -160,16 +160,17 @@ function CN() {
 
 }
 function EN() {
+  var thumb = (searchParams.get("official") === "true") ? gmetadataObject_react.thumb.replace("l.jpg", "300.jpg") : gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")
   return (
     <div className='rounded' style={{ backgroundColor: "#F0F0F0", }}>
       <div className="row" style={{ height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
 
         <div className="col-sm-6 d-sm-none d-block" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
           <div></div>
-          <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
+          <img id="thumb" src={thumb} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
         </div>
         <div className="col-sm-6 d-sm-block d-none" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
-          <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{ width: "100%", }} className="p-3" alt='thumbnail' />
+          <img id="thumb" src={thumb} style={{ width: "100%", }} className="p-3" alt='thumbnail' />
         </div>
 
 
