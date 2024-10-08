@@ -18,7 +18,7 @@ async function actions() {
   await fetch((searchParams.get("official") === "true") ? 'https://e-hentai.org/api.php' : 'https://axcwg.cn/api/ehentaiproxypost',
     {
       method: "POST",
-      body: '{"method": "gdata","gidlist": [[' + (searchParams.get("gid") === null) ? "2231376" : searchParams.get("gid") + ',"' + (searchParams.get("token") === null) ? "a7584a5932" : searchParams.get("token") + '"]],"namespace": 1}',
+      body: '{"method": "gdata","gidlist": [[' + ((searchParams.get("gid") === null) ? "2231376" : searchParams.get("gid")) + ',"' + ((searchParams.get("token") === null) ? "a7584a5932" : searchParams.get("token")) + '"]],"namespace": 1}',
       headers: new Headers({
         'Content-Type': 'application/json'
       }),
