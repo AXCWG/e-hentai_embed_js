@@ -3,8 +3,10 @@ import db from './db.full.json'
 import React from 'react';
 const searchParams = new URLSearchParams(window.location.search);
 var requestResult;
-var gmetadataObject_react = await actions().then((res) => gmetadataObject_react = res);
-
+var gmetadataObject_react
+const wait = t => new Promise((resolve, reject) => setTimeout(resolve, t))
+async function get() { await actions().then((res) => gmetadataObject_react = res).catch(async (e) => {await wait(1000) ; await get() }) };
+await get()
 var zh = true;
 if (searchParams.get("zh") !== null) {
   console.log(searchParams.get("zh"))
@@ -13,7 +15,7 @@ if (searchParams.get("zh") !== null) {
 
 async function actions() {
 
-  await fetch((searchParams.get("official")==="true") ? 'https://e-hentai.org/api.php' : 'https://axcwg.cn/api/ehentaiproxypost',
+  await fetch((searchParams.get("official") === "true") ? 'https://e-hentai.org/api.php' : 'https://axcwg.cn/api/ehentaiproxypost',
     {
       method: "POST",
       body: '{"method": "gdata","gidlist": [[' + searchParams.get("gid") + ',"' + searchParams.get("token") + '"]],"namespace": 1}',
