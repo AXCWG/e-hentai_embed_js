@@ -1,3 +1,8 @@
+//  TODO: 
+//    Notate this whole shit. (though i doubt anybody won't understand this)
+//    
+
+
 import './App.css';
 import db from './db.full.json'
 import React from 'react';
@@ -51,16 +56,18 @@ function App() {
 
 }
 function CN() {
+  var thumb = (searchParams.get("official") === "true") ? gmetadataObject_react.thumb.replace("l.jpg", "300.jpg") : gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")
+
   return (
     <div className='rounded' style={{ backgroundColor: "#F0F0F0", }}>
       <div className="row" style={{ height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
 
         <div className="col-sm-6 d-sm-none d-block" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
           <div></div>
-          <img id="thumb" src={searchParams.get("official") === "true" ? gmetadataObject_react.thumb.replace("l.jpg", "300.jpg") : gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
+          <img id="thumb" src={thumb} style={{ width: "100%" }} className="p-3" alt='thumbnail' />
         </div>
         <div className="col-sm-6 d-sm-block d-none" style={{ zoom: 1, textAlign: "center", display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100%" }}>
-          <img id="thumb" src={gmetadataObject_react.thumb.replace("l.jpg", "300.jpg")} style={{ width: "100%", }} className="p-3" alt='thumbnail' />
+          <img id="thumb" src={thumb} style={{ width: "100%", }} className="p-3" alt='thumbnail' />
         </div>
 
 
