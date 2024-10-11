@@ -20,7 +20,7 @@ if (searchParams.get("zh") !== null) {
 
 async function actions() {
 
-  await fetch((searchParams.get("official") === "true") ? 'https://e-hentai.org/api.php' : 'https://axcwg.cn/api/ehentaiproxypost',
+  await fetch((searchParams.get("official") === "true") ? 'https://e-hentai.org/api.php' : 'https://andyxie.cn:2143/api/ehentaiproxypost',
     {
       method: "POST",
       body: '{"method": "gdata","gidlist": [[' + ((searchParams.get("gid") === null) ? "2231376" : searchParams.get("gid")) + ',"' + ((searchParams.get("token") === null) ? "a7584a5932" : searchParams.get("token")) + '"]],"namespace": 1}',
@@ -56,7 +56,7 @@ function App() {
 
 }
 function CN() {
-  var thumb = (searchParams.get("official") === "true") ? gmetadataObject_react.thumb.replace("l.jpg", "300.jpg") : gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://axcwg.cn/ehimages/")
+  var thumb = (searchParams.get("official") === "true") ? gmetadataObject_react.thumb.replace("l.jpg", "300.jpg") : gmetadataObject_react.thumb.replace("l.jpg", "300.jpg").replace("https://ehgt.org/", "https://andyxie.cn:2143/ehimages/")
 
   return (
     <div className='rounded' style={{ backgroundColor: "#F0F0F0", }}>
